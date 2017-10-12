@@ -40,7 +40,7 @@
                         {{ csrf_field() }}
                         <label for="pid">Chief ID:</label>
                         <input type="number" name='pid' class="form-control" placeholder="Chief ID" value="<?php echo old('pid')==null?$item->pid:old('pid'); ?>">
-                        <small id="pidHelp" class="form-text text-muted">Выберете существующего начальника (для выбора корневой позиции впишите 0).</small>
+                        <small id="pidHelp" class="form-text text-muted">Выберете существующего начальника, не ниже текущего в иерархии (для выбора корневой позиции впишите 0).</small>
                         <br><label for="full_name">Full name:</label>
                         <input type="text" name='full_name' class="form-control" placeholder="Full name" value="<?php echo old('full_name')==null?$item->full_name:old('full_name'); ?>">
                         <label for="position">Position:</label>
