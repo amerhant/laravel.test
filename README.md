@@ -10,3 +10,5 @@ php artisan config:clear
 php artisan migrate
 php artisan db:seed
 </pre>
+login: admin
+password: 123456

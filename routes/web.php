@@ -15,7 +15,7 @@ Route::match(['get', 'post'], '/', 'SiteController@index');
 Route::get('/admin',  function (){
     return redirect('/admin/employees');
 });
-Route::resource('/admin/employees', 'Admin\EmployeesResource',['except'=>['show']]);
+Route::resource('/admin/employees', 'Admin\EmployeesResource',['except'=>['show']]); //RESTful
 
 Auth::routes(['except'=>['/register']]);
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout'); 
