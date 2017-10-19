@@ -11,4 +11,5 @@ php artisan migrate
 php artisan db:seed
 </pre>
 login: admin
+<br>
 password: 123456
